@@ -1,10 +1,7 @@
-
-package cinco;
-
 import java.util.Scanner;
 
 
-public class CINCO {
+public class Main {
     public static void Verificar_Simetria(int d){
     Scanner sc = new Scanner(System.in);
     int[][] Matriz = new int[d][d];
