@@ -114,3 +114,11 @@ public class Main {
     }
 }
 ```
+
+# 3. Complejidad
+
+> I) Entrada del valor de la variable "dimension"
+
+> II) Ingreso de numeros a la matriz cuadrada
+
+> III) Comprobación de la existencia de la matriz simetrica, impresión de la matriz cuadratica y la verificación de la simetria como dato de salida
