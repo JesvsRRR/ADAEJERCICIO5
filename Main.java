@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Main {
     public static void Verificar_Simetria(int d){
     Scanner sc = new Scanner(System.in);
@@ -15,14 +14,14 @@ public class Main {
         }
     }    
     
-    
     for(int i=0; i < d;i++){
         for(int j=0; j < d;j++){
+           System.out.print("["+Matriz[i][j]+"]");
            if(Matriz[j][i] == Matriz[i][j]){
            SiNo++;   
-           System.out.println(SiNo);
            }
         }
+        System.out.println(""); 
     }
     if(SiNo == d*d){
     System.out.println("ES SIMETRICO");    
@@ -43,5 +42,4 @@ public class Main {
         }
         Verificar_Simetria(d);        
     }
-    
 }
