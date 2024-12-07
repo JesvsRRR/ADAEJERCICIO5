@@ -119,6 +119,15 @@ public class Main {
 
 > I) Entrada del valor de la variable "dimension"
 
+- Complejidad de tiempo: 𝑂(1)
+- Complejidad de espacio: 𝑂(1)
+
 > II) Ingreso de numeros a la matriz cuadrada
 
+- Complejidad de tiempo: 𝑂(d²)
+- Complejidad de espacio: 𝑂(d²)
+
 > III) Comprobación de la existencia de la matriz simetrica, impresión de la matriz cuadratica y la verificación de la simetria como dato de salida
+
+- Complejidad de tiempo: 𝑂(d²)
+- Complejidad de espacio: 𝑂(d²)
