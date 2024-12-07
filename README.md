@@ -8,6 +8,8 @@
 
 > I) Entrada del valor de la variable "dimension"
 
+- Se importa la clase `Scanner` del paquete `java.util` para poder leer datos desde la entrada estándar y darle valor a la variable `"d"`.
+
 ```bash
 import java.util.Scanner;
 ```
@@ -24,6 +26,10 @@ import java.util.Scanner;
 ```
 
 > II) Ingreso de numeros a la matriz cuadrada
+
+- Se llama a la función `Verificar_Simetria(d)` que utilizara la variable `"d"`.
+- Se inicializa la matriz cuadratica `Matriz[d][d]` y una variable contadora `Sino`.
+- Se procede a ingresar el valor numerico a cada matriz cuadratica. 
 
 ```bash
     Verificar_Simetria(d);
@@ -45,6 +51,9 @@ public class Main {
     }
 ```
 > III) Comprobación de la existencia de la matriz simetrica, impresión de la matriz cuadratica y la verificación de la simetria como dato de salida
+
+- En algebra, podemos definir una matriz como simetrica si entre la diagonal principal que envuelve lados de izquierda y derecha tiene valores igual como si se tratase de un espejo. En ese caso se realiza otro recorrido donde se imprime y se compara estos lados que se presumen iguales de la matriz `"Matriz[d][d]"`, si fuese el caso se suma 1 a la variable `SiNo`.
+- Si despues del recorrido la variable `SiNo` es igual a `"d"` al cuadrado, entonces la matriz es simetrica y se imprime,igualmente si fuera el caso contrario.
 
 ```bash
     for(int i=0; i < d;i++){
@@ -119,15 +128,15 @@ public class Main {
 
 > I) Entrada del valor de la variable "dimension"
 
-- Complejidad de tiempo: 𝑂(1)
-- Complejidad de espacio: 𝑂(1)
+- Complejidad de tiempo: 𝑂(1) (Porque se realiza una lectura simple, en el peor caso seria 𝑂(k) si se ingresan multiples valores incorrectos)
+- Complejidad de espacio: 𝑂(1) (Porque solo estamos utilizando una variable escalar)
 
 > II) Ingreso de numeros a la matriz cuadrada
 
-- Complejidad de tiempo: 𝑂(d²)
-- Complejidad de espacio: 𝑂(d²)
+- Complejidad de tiempo: 𝑂(d²) (Debido a que se realiza un recorrido en bucle doble más de una vez)
+- Complejidad de espacio: 𝑂(d²) (Debido a la implementación de una estructura de datos bidimensional)
 
 > III) Comprobación de la existencia de la matriz simetrica, impresión de la matriz cuadratica y la verificación de la simetria como dato de salida
 
-- Complejidad de tiempo: 𝑂(d²)
-- Complejidad de espacio: 𝑂(d²)
+- Complejidad de tiempo: 𝑂(d²) (La complejidad total es la suma de las dos partes 𝑂(d²) + 𝑂(d²) = 𝑂(d²) )
+- Complejidad de espacio: 𝑂(d²) (Ya que solo almacenamos una matriz de tamaño d x d, osea una estructura bidimensional)
